@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: fristaildg/myblog
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -29,6 +30,7 @@ collections:
 
   - name: "pages"
     label: "Pages"
+    create: true
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
